@@ -14,16 +14,10 @@ function getReminders(tasks, now = new Date()) {
   });
 }
 
-/**
- * Зберігає список завдань у сховищі (за замовчуванням localStorage).
- */
 function saveTasks(tasks, storage = globalThis.localStorage) {
   storage.setItem('studyplanner.tasks', JSON.stringify(tasks));
 }
 
-/**
- * Завантажує список завдань зі сховища. Якщо даних немає — порожній масив.
- */
 function loadTasks(storage = globalThis.localStorage) {
   const raw = storage.getItem('studyplanner.tasks');
   return raw ? JSON.parse(raw) : [];

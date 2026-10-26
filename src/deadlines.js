@@ -21,16 +21,10 @@ function createTask({ title, subject = '', deadline, priority = 'normal' }) {
   };
 }
 
-/**
- * Повертає нову копію списку, відсортовану за зростанням дедлайну.
- */
 function sortByDeadline(tasks) {
   return [...tasks].sort((a, b) => new Date(a.deadline) - new Date(b.deadline));
 }
 
-/**
- * Чи прострочене завдання (не виконане і дедлайн у минулому).
- */
 function isOverdue(task, now = new Date()) {
   return !task.done && new Date(task.deadline) < now;
 }
