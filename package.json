@@ -1,0 +1,12 @@
+{
+  "name": "study-planner",
+  "version": "0.0.0",
+  "description": "StudyPlanner — застосунок для обліку студентських дедлайнів",
+  "private": true,
+  "scripts": {
+    "test": "node --test test/"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
