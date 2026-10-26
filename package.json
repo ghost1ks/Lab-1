@@ -1,6 +1,6 @@
 {
   "name": "study-planner",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "StudyPlanner — застосунок для обліку студентських дедлайнів",
   "private": true,
   "scripts": {
